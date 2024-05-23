@@ -13,14 +13,16 @@ export default class Lampa {
         this.#divElem = this.#szuloElem.children("div:last-child");
         console.log(this.#divElem);
         this.#szinBeallit();
+        this.#esemenyKezeleo();
+       
 
+    }
+    #esemenyKezeleo(){
         this.#divElem.on("click", () => {
             this.#kattintasTigger("kapcsolas");
             console.log(this.#id);
         })
-
     }
-
     #kattintasTigger(esemenynev) {
         const e = new CustomEvent(esemenynev, { detail: this.#id })
         window.dispatchEvent(e)

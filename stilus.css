@@ -11,11 +11,15 @@ main {
 
 .jatekter div {
     aspect-ratio: 1;
-    border: 1px solid gray;
+    border: 2px solid gray;
     border-radius: 50%;
     background-color: green;
 }
 
 .felkapcs {
     background-color: rgb(230, 209, 50) !important;
+}
+
+h1{
+    text-align: center;
 }
