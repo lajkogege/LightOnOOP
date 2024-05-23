@@ -14,6 +14,23 @@ export default class Lampa {
         console.log(this.#divElem);
         this.#szinBeallit();
 
+        this.#divElem.on("click", () => {
+            this.#kattintasTigger("kapcsolas");
+            console.log(this.#id);
+        })
+
+    }
+
+    #kattintasTigger(esemenynev) {
+        const e = new CustomEvent(esemenynev, { detail: this.#id })
+        window.dispatchEvent(e)
+    }
+
+    #megjelenit() {
+        let txt = `<div class="lampa">
+            </div>        
+        `
+        this.#szuloElem.append(txt);
     }
 
     #szinBeallit() {
@@ -23,16 +40,6 @@ export default class Lampa {
         }
     }
 
-    #kattintasTigger(esemenynev) {
-        conste = new CustomEvent(esemenynev, { detail: this.#id })
-        window.dispatchEvent(e)
-    }
 
 
-    #megjelenit() {
-        let txt = `<div class="lampa">
-            </div>        
-        `
-        this.#szuloElem.append(txt);
-    }
 }

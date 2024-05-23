@@ -1,4 +1,10 @@
-import Lampa from "./Lampa.js";
+import Jatekter from "./Jatekter.js";
 
-new Lampa(false, 0, $(".jatekter"));
-new Lampa(true, 1, $(".jatekter"));
+
+const lista=[false,false,false,true,true,true,false,false,false];
+new Jatekter(lista);
+
+$(window).on("kapcsolas", (event) => {
+    console.log(event.detail)
+
+});
