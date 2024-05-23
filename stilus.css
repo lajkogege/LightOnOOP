@@ -16,9 +16,11 @@ body{
 
 .jatekter div {
     aspect-ratio: 1;
-    border: 2px solid gray;
+    border: 2px solid white;
     border-radius: 50%;
     background-color: green;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .felkapcs {
@@ -26,6 +28,7 @@ body{
 }
 
 h1{
+    padding-top: 20px;
     margin-top: 30px;
     text-align: center;
     color: white;
