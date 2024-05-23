@@ -1,7 +1,7 @@
 import Jatekter from "./Jatekter.js";
 
 class Alapot {
-
+    #db
     #lista = [false, false, false, true, true, true, false, false, false];
     constructor() {
         new Jatekter(this.#lista);
@@ -16,6 +16,7 @@ class Alapot {
 
 
         });
+        
 
     }
 
@@ -33,6 +34,10 @@ class Alapot {
         if (id < 6) {
             this.#lista[id + 3] = !this.#lista[id + 3];
         }
+    }
+
+    #lekapcsoltakSzama(db){
+        
     }
 
 }

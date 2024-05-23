@@ -20,7 +20,6 @@ export default class Lampa {
     #esemenyKezeleo(){
         this.#divElem.on("click", () => {
             this.#kattintasTigger("kapcsolas");
-            console.log(this.#id);
         })
     }
     #kattintasTigger(esemenynev) {
